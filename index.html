@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinMaster - Domine Suas Finanças com Nosso Guia Gratuito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#047857',
+                        accent: '#d97706',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #047857 100%);
+        }
+        .countdown {
+            font-family: 'Arial', sans-serif;
+        }
+        .testimonial-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .form-input:focus {
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.2);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-chart-line text-3xl text-accent mr-2"></i>
+                    <span class="text-2xl font-bold">FinMaster</span>
+                </div>
+                <div class="hidden md:block">
+                    <span class="bg-accent text-white px-4 py-2 rounded-full text-sm font-bold">
+                        <i class="fas fa-bolt mr-1"></i> OFERTA POR TEMPO LIMITADO
+                    </span>
+                </div>
+            </div>
+            
+            <div class="mt-12 md:mt-20 text-center md:text-left md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+                        Domine Suas Finanças e Transforme Sua Vida com Este Guia Gratuito
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90">
+                        Descubra os segredos para controlar seu dinheiro, eliminar dívidas e construir riqueza - mesmo que você nunca tenha estudado finanças
+                    </p>
+                    
+                    <div class="bg-white text-primary rounded-lg p-4 inline-block mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-2xl mr-3"></i>
+                            <div>
+                                <div class="font-bold">+500 downloads na primeira semana</div>
+                                <div class="text-sm">Restam apenas <span class="font-bold">37</span> cópias gratuitas</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden md:block">
+                        <a href="#form" class="bg-accent hover:bg-yellow-700 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-block pulse">
+                            <i class="fas fa-download mr-2"></i> QUERO MEU ACESSO IMEDIATO!
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Mulher feliz com finanças organizadas" 
+                         class="rounded-lg shadow-2xl mx-auto w-full max-w-md">
+                </div>
+                
+                <div class="md:hidden mt-6 text-center">
+                    <a href="#form" class="bg-accent hover:bg-yellow-700 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-block pulse">
+                        <i class="fas fa-download mr-2"></i> QUERO MEU ACESSO IMEDIATO!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+                O Que Você Vai Descobrir Neste Guia Exclusivo?
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-wallet text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Como sair do vermelho em 30 dias</h3>
+                            <p class="text-gray-700">(mesmo com salário baixo) - O método passo a passo que já ajudou centenas de pessoas a se livrarem das dívidas rapidamente.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-lock text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">O método simples que bancos não querem que você conheça</h3>
+                            <p class="text-gray-700">Para economizar automaticamente sem sentir falta do dinheiro - funciona mesmo para quem nunca conseguiu guardar dinheiro antes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">3 estratégias para aumentar sua renda</h3>
+                            <p class="text-gray-700">Sem precisar de outro emprego - descubra fontes alternativas de renda que você pode começar ainda hoje.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-gem text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">O segredo dos ricos para fazer o dinheiro trabalhar por você</h3>
+                            <p class="text-gray-700">Como começar a investir com pouco dinheiro e multiplicar seu patrimônio usando o poder dos juros compostos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-xl mb-6">E muito mais! <span class="font-bold">O segredo da página 47 vai revolucionar sua relação com o dinheiro!</span></p>
+                <a href="#form" class="bg-primary hover:bg-blue-900 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-block">
+                    <i class="fas fa-arrow-down mr-2"></i> QUERO RECEBER MEU GUIA AGORA!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+                O Que Dizem Quem Já Leu
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mr-3">C</div>
+                        <div>
+                            <h4 class="font-bold">Carlos, 32 anos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Depois desse ebook, organizei minhas dívidas e já economizei R$1.200 em 2 meses! Finalmente entendi como priorizar meus gastos e cortar o que não era essencial."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white font-bold mr-3">A</div>
+                        <div>
+                            <h4 class="font-bold">Ana, 28 anos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Finalmente entendi investimentos e já tenho minha reserva de emergência! O método de economia automática mudou minha vida - agora guardo dinheiro sem nem perceber."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white font-bold mr-3">R</div>
+                        <div>
+                            <h4 class="font-bold">Roberto, 45 anos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Depois de 20 anos achando que investir era só para ricos, comecei com R$100 e já vi meu dinheiro crescer. A explicação sobre juros compostos foi um divisor de águas!"</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-primary text-white rounded-lg p-6 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 text-center mb-4 md:mb-0">
+                        <div class="text-5xl font-bold countdown">37</div>
+                        <div class="text-sm uppercase">Cópias Restantes</div>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8 text-center md:text-left">
+                        <h3 class="text-xl font-bold mb-2">OFERTA POR TEMPO LIMITADO!</h3>
+                        <p class="mb-4">A cada 100 downloads, o preço volta ao normal. Garanta seu acesso gratuito agora mesmo!</p>
+                        <a href="#form" class="bg-white text-primary hover:bg-gray-200 font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-block">
+                            <i class="fas fa-gift mr-2"></i> QUERO MEU GUIA GRATUITO
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gray-50 rounded-xl overflow-hidden shadow-xl">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary text-white p-8">
+                        <h2 class="text-3xl font-bold mb-4">Quero Receber Meu Guia Gratuito Agora!</h2>
+                        <p class="mb-6">Preencha o formulário ao lado para receber imediatamente o ebook <strong>"Finanças Pessoais Descomplicadas"</strong> no seu e-mail.</p>
+                        
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-6">
+                            <h3 class="font-bold mb-2">O que você vai receber:</h3>
+                            <ul class="list-disc pl-5">
+                                <li class="mb-1">Ebook completo em PDF (58 páginas)</li>
+                                <li class="mb-1">Planilha de orçamento exclusiva</li>
+                                <li class="mb-1">Lista dos melhores aplicativos financeiros</li>
+                                <li>Dicas semanais por WhatsApp</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-lock text-2xl mr-3"></i>
+                            <div>
+                                <div class="font-bold">Seus dados estão 100% seguros</div>
+                                <div class="text-sm opacity-90">Nós odiamos spam tanto quanto você!</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <form id="leadForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Nome completo</label>
+                                <input type="text" id="name" placeholder="Como gostaria de ser chamado?" 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent form-input" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-1">E-mail</label>
+                                <input type="email" id="email" placeholder="Seu melhor e-mail" 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent form-input" required>
+                            </div>
+                            
+                            <div>
+                                <label for="whatsapp" class="block text-gray-700 font-medium mb-1">WhatsApp</label>
+                                <input type="tel" id="whatsapp" placeholder="Seu WhatsApp para dicas exclusivas" 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent form-input" required>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-accent hover:bg-yellow-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300">
+                                <i class="fas fa-download mr-2"></i> QUERO MEU ACESSO IMEDIATO!
+                            </button>
+                            
+                            <p class="text-sm text-gray-500 text-center">
+                                <i class="fas fa-lock mr-1"></i> Seus dados estão seguros. Não compartilhamos suas informações.
+                            </p>
+                        </form>
+                        
+                        <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                            <i class="fas fa-check-circle mr-2"></i> Cadastro realizado com sucesso! Redirecionando para o ebook...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+                Perguntas Frequentes
+            </h2>
+            
+            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="divide-y divide-gray-200">
+                    <div class="faq-item p-6">
+                        <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg text-gray-800">
+                            <span>É realmente gratuito?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-3 text-gray-600 hidden">
+                            <p>Sim! Estamos oferecendo este material valioso gratuitamente porque acreditamos que educação financeira deve ser acessível a todos. Nosso objetivo é ajudar o máximo de pessoas possível a terem uma vida financeira mais saudável.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item p-6">
+                        <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg text-gray-800">
+                            <span>O que vou aprender exatamente?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-3 text-gray-600 hidden">
+                            <p>Você terá um guia passo a passo completo para:</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>Criar um orçamento infalível que realmente funciona</li>
+                                <li>Técnicas comprovadas para economizar mesmo com pouco dinheiro</li>
+                                <li>Estratégias eficientes para sair das dívidas de uma vez por todas</li>
+                                <li>Como começar a investir com segurança, mesmo sendo iniciante</li>
+                                <li>Os 3 maiores erros que mantêm as pessoas pobres (e como evitá-los)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item p-6">
+                        <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg text-gray-800">
+                            <span>Por que devo fornecer meus dados?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-3 text-gray-600 hidden">
+                            <p>Precisamos do seu e-mail para enviar o ebook e do WhatsApp para enviar dicas exclusivas que não estão no material. Além disso, você receberá:</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>Atualizações quando lançarmos novos conteúdos gratuitos</li>
+                                <li>Dicas práticas semanais para melhorar suas finanças</li>
+                                <li>Avisos sobre oportunidades especiais (como cursos gratuitos)</li>
+                            </ul>
+                            <p class="mt-2">Você pode cancelar a qualquer momento com um clique.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item p-6">
+                        <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg text-gray-800">
+                            <span>Quem criou este material?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-3 text-gray-600 hidden">
+                            <p>O ebook foi desenvolvido pela equipe FinMaster, composta por especialistas em educação financeira com mais de 15 anos de experiência no mercado. Nossos consultores já ajudaram mais de 10.000 pessoas a transformarem suas vidas financeiras.</p>
+                            <p class="mt-2">Todo o conteúdo é baseado em pesquisas científicas e estratégias comprovadas, mas explicadas de forma simples e acessível para qualquer pessoa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-xl mb-6">Ainda com dúvidas? Envie um WhatsApp para <span class="font-bold">(11) 98765-4321</span> - responderemos em até 2 horas!</p>
+                <a href="#form" class="bg-primary hover:bg-blue-900 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-block">
+                    <i class="fas fa-arrow-down mr-2"></i> QUERO MEU GUIA GRATUITO AGORA!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-chart-line text-3xl text-accent mr-2"></i>
+                        <span class="text-2xl font-bold">FinMaster</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Educação financeira descomplicada para todos.</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-2">© 2023 FinMaster. Todos os direitos reservados.</p>
+                    <div class="text-sm space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">Política de Privacidade</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam.</p>
+                <p class="mt-2">FinMaster - CNPJ: 12.345.678/0001-99 - contato@finmaster.com.br</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            const successMessage = document.getElementById('successMessage');
+            successMessage.classList.remove('hidden');
+            
+            // Redirect after 3 seconds
+            setTimeout(() => {
+                window.location.href = 'https://finmaster-financas.github.io/guia/';
+            }, 3000);
+        });
+        
+        // Countdown timer (simulated)
+        let count = 37;
+        const countdownElement = document.querySelector('.countdown');
+        
+        setInterval(() => {
+            if (count > 0) {
+                count--;
+                countdownElement.textContent = count;
+                
+                // Change color when low
+                if (count < 10) {
+                    countdownElement.classList.add('text-red-500');
+                }
+            }
+        }, 60000); // Decrease every minute
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=FinMasterCred/captura" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
